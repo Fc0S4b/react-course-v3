@@ -22,6 +22,7 @@ const Book = () => {
   )
 }
 
+// imágenes con src de enlaces externos funcionarán solo si están en carpeta public
 const Image = () => <img src="asd.jpg" alt="book1" />
 const Title = () => <h2>Title of the Book</h2>
 const Author = () => {
