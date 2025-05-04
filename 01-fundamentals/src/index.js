@@ -12,25 +12,17 @@ const BookList = () => {
   )
 }
 
-const Book = () => {
-  return (
-    <article>
-      <Image />
-      <Title />
-      <Author />
-    </article>
-  )
-}
+const author = 'Name'
 
-const Image = () => <img src="asd.jpg" alt="book1" />
-const Title = () => <h2>Title of the Book</h2>
-const Author = () => {
+const Book = () => {
+  const title = 'Title of the book'
   return (
-    //styles en el css no funcionarán, inline tiene prioridad
-    // style recibe un objeto JS así que puedes definir el objeto en cualquier parte
-    <h2 style={{ color: '#617d98', fontSize: '0.75rem', marginTop: '0.5rem' }}>
-      Author
-    </h2>
+    <article className="book">
+      <img src="asd.jpg" alt="book1" />
+      <h2>{title}</h2>
+      <h2>{author.toUpperCase()}</h2>
+      {/* <p>{let x = 6}</p> error, solo expresiones */}
+    </article>
   )
 }
 
