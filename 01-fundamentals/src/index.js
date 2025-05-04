@@ -22,11 +22,16 @@ const Book = () => {
   )
 }
 
-// imágenes con src de enlaces externos funcionarán solo si están en carpeta public
 const Image = () => <img src="asd.jpg" alt="book1" />
 const Title = () => <h2>Title of the Book</h2>
 const Author = () => {
-  return <h2>Author</h2>
+  return (
+    //styles en el css no funcionarán, inline tiene prioridad
+    // style recibe un objeto JS así que puedes definir el objeto en cualquier parte
+    <h2 style={{ color: '#617d98', fontSize: '0.75rem', marginTop: '0.5rem' }}>
+      Author
+    </h2>
+  )
 }
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
