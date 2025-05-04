@@ -1,37 +1,18 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 
-// function Greeting() {
-//   return (
-//     <>
-//       <div>
-//         <h3>hello people</h3>
-//         <ul>
-//           <li>
-//             <a href="#">Hello world</a>
-//           </li>
-//         </ul>
-//       </div>
-//       <h2>hello world</h2>
-//     </>
-//   )
-// }
-
 function Greeting() {
   return (
-    <React.Fragment>
-      <div className="someValue">
-        <h3>hello people</h3>
-        <ul>
-          <li>
-            <a href="#">Hello world</a>
-          </li>
-        </ul>
-      </div>
-      <h2>hello world</h2>
-      <input />
-    </React.Fragment>
+    <div>
+      <Person />
+      <Message />
+    </div>
   )
+}
+
+const Person = () => <h2>john doe</h2>
+const Message = () => {
+  return <div>this is my message</div>
 }
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
